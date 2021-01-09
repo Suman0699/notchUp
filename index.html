@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Book a Free Coding Trial | Age 5-17Yrs | NotchUp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<style>
+  body {
+    background-color: white;
+  }
+
+  .navbar {
+    background-color: #ffffff;
+    border: none;
+  }
+
+  .nav {
+    box-shadow: 0 0 5px 0 #6e7070;
+  }
+
+  .logo {
+    margin-top: 2.3%;
+    margin-bottom: 2.5%;
+    padding-left: 6%;
+  }
+
+  .logo img {
+    cursor: pointer;
+  }
+
+  .heder-text {
+    margin-top: 5%;
+    font-size: 2em;
+  }
+
+  .heder-text p {
+    margin: 0;
+  }
+
+  .text {
+    background-color: #ffde5f;
+    height: 50px;
+    border: none;
+  }
+
+  ::placeholder {
+    color: #69365b !important;
+  }
+
+  select {
+    color: #69365b !important;
+  }
+
+  input[type=text]:focus {
+    background-color: #c0c0c0;
+  }
+
+  .description {
+    font-size: 3em;
+    font-weight: 550;
+    color: #ee4a66;
+  }
+
+  strong {
+    text-align: center;
+    font-size: 24px;
+    color: #323298;
+  }
+
+  .submit-btn {
+    text-align: center;
+  }
+
+  .btn {
+    background-color: #533062;
+    color: white;
+    cursor: pointer;
+    margin-top: 4%;
+    width: 37%;
+    height: 40px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: var(--trans1, border-color .4s ease 0s, background-color .4s ease 0s);
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+  }
+
+  .btn:hover {
+    background-color: #4c4c4c;
+    color: white;
+    outline: none;
+    transition: var(border-color .4s ease 0s, background-color .4s ease 0s)
+  }
+
+  .btn:focus,
+  .btn:active {
+    outline: none !important;
+    color: white;
+  }
+
+  .frm-head {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: blue;
+  }
+
+  .img-ls {
+    width: 889px;
+    height: 680px;
+    object-fit: cover;
+  }
+
+  .img-xs {
+    width: 320px;
+    height: 213px;
+    object-fit: cover;
+  }
+</style>
+
+<body>
+
+  <!--- Nav bar --->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid text-center">
+      <div class="row nav">
+        <div class="col-xs-12 col-sm-12 col-md-12 logo">
+          <img
+            src="https://static.wixstatic.com/media/9d7c0d_3c31692802d54810979831f6b8596fcb~mv2.png/v1/crop/x_291,y_91,w_553,h_664/fill/w_79,h_83,al_c,q_95/Teal_fb.webp"
+            alt="NotchUp Logo">
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <!-- /Nav bar -->
+
+  <!-- Main content -->
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-xs-12 col-sm-7 col-md-7">
+        <h3 class="description">Personalized Online Coding Classes&nbsp;for Age 5&nbsp;to 17 years</h3>
+      </div>
+      <div class="col-xs-12 col-sm-7 col-md-7">
+        <img class="hidden-xs img-ls" alt=""
+          src="https://static.wixstatic.com/media/9d7c0d_1463c8a58ce94dcc8e2e62e80da52d94~mv2.jpg/v1/fill/w_762,h_633,al_c,q_90/9d7c0d_1463c8a58ce94dcc8e2e62e80da52d94~mv2.webp">
+        <img class="visible-xs img-xs" alt=""
+          src="https://static.wixstatic.com/media/9d7c0d_1463c8a58ce94dcc8e2e62e80da52d94~mv2.jpg/v1/fill/w_640,h_426,al_c,q_90/9d7c0d_1463c8a58ce94dcc8e2e62e80da52d94~mv2.webp">
+      </div>
+      <div class="col-xs-12 col-sm-5 col-md-5 text-left">
+        <p class="frm-head">Book a FREE Trial Coding Session</p>
+        <form action="#" name="test-form" id="courseForm">
+          <div class="form-group">
+            <input type="text" name="parents-name" placeholder="Enter parent name" class="form-control text"
+              id="parentName" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="parents-number" placeholder="Enter parent number" class="form-control text"
+              id="parentNumber" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="parents-email" placeholder="Enter email Id" class="form-control text"
+              id="parentEmail" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="child-name" placeholder="Name of Child" class="form-control text" id="childName"
+              required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="child-age" placeholder="Age of Child" class="form-control text" id="childAge"
+              required>
+          </div>
+          <div class="form-group">
+            <select id="courseName" class="form-control text">
+              <option value="none">Choose a course</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select id="selectedDate" class="form-control text">
+              <option value="none">Choose a date</option>
+            </select>
+          </div>
+          <div class="form-group" id="slotsSection">
+            <select id="suitableSlots" class="form-control text">
+              <option value="none">Choose a time slot</option>
+            </select>
+          </div>
+          <div class="submit-btn">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- /Main content -->
+
+  <script>
+
+    /* Latest slot constant in days */
+    const MAX_DATE_LIMIT = 7;
+
+    /* Earliest slot constant in hours*/
+    const MIN_SLOT_IN_HOURS = 4;
+
+    $(document).ready(function () {
+
+      /* API call to get the course data */
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbzJ8Nn2ytbGO8QOkGU1kfU9q50RjDHje4Ysphyesyh-osS76wep/exec", success: function (result) {
+          setCourse(result);
+          setDate();
+          setTimeSlot();
+        }
+      });
+
+      /* To set the course in the DOM */
+      function setCourse(availableCourses) {
+        var coursesOptions = '';
+        for (let index = 0; index < availableCourses.length; index++) {
+          var course = availableCourses[index];
+          coursesOptions += '<option value="' + course.course_name + '">' + course.course_name + '</option>';
+        }
+        $("#courseName").append(coursesOptions);
+      }
+
+      /* To set the time slot in the DOM */
+      function setTimeSlot(minSlotTime) {
+
+        var selectTimeInputBox = '<select id="suitableSlots" class="form-control text"> <option value="none">Choose a time slot</option> </select>';
+
+        var maxSlotTime = new Date();
+        maxSlotTime.setHours(21, 0, 0, 0);
+
+        var slotOptions = '';
+        while (minSlotTime <= maxSlotTime) {
+          var formattedTime = formatAMPM(minSlotTime);
+          slotOptions += '<option value="' + formattedTime + '">' + formattedTime + '</option>';
+          minSlotTime.setHours(minSlotTime.getHours() + 1);
+        }
+        $("#suitableSlots").remove();
+        document.getElementById("slotsSection").innerHTML = selectTimeInputBox;
+        $("#suitableSlots").append(slotOptions);
+      }
+
+      /* To set the date in the DOM */
+      function setDate() {
+
+        const selectDateInputBox = '<select id="selectedDate" class="form-control text"> <option value="none">Choose a date</option> </select>';
+
+        const now = new Date();
+        const futureDate = new Date(now);
+        var dateOptions = '<option value="' + (futureDate.getTime() / 1000) + '">' + formatDate(futureDate) + '</option>';
+        for (let d = 0; d < MAX_DATE_LIMIT - 1; d++) {
+          futureDate.setDate(futureDate.getDate() + 1)
+          dateOptions += '<option value="' + (futureDate.getTime() / 1000) + '">' + formatDate(futureDate) + '</option>';
+        }
+        $("#selectedDate").append(dateOptions);
+      }
+
+      /*
+      ************************** 
+      *   Supporting functions 
+      **************************
+      */
+
+      /* Formate date object into date and short month ex: '1 Jan' */
+      function formatDate(date) {
+        let shortMonthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        return date.getDate() + ' ' + shortMonthNames[date.getMonth() - 1];
+      }
+
+      /* Formate the date into time of AM and PM*/
+      function formatAMPM(date) {
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12;
+        hours = hours ? hours : 12; // the hour '0' should be '12'
+        minutes = minutes < 10 ? '0' + minutes : minutes;
+        var strTime = hours + ':' + minutes + ' ' + ampm;
+        return strTime;
+      }
+
+      /* Round the date object to the next hour. */
+      function roundMinutes(date) {
+        date.setHours(date.getHours() + Math.ceil(date.getMinutes() / 60));
+        date.setMinutes(0, 0, 0); // Resets also seconds and milliseconds
+        return date;
+      }
+
+      /*
+      ************************** 
+      *   Registered events 
+      **************************
+      */
+
+      /* On Change of course date */
+      $('#selectedDate').change(function () {
+        var now = new Date();
+        var selectedDate = $("#selectedDate").val();
+        var selectedDateObj = new Date(selectedDate * 1000);
+        var minSlotTime = now;
+        if (selectedDateObj.getDate() === now.getDate()) {
+          minSlotTime.setHours(minSlotTime.getHours() + MIN_SLOT_IN_HOURS);
+          minSlotTime = roundMinutes(minSlotTime);
+        } else {
+          minSlotTime.setHours(9, 0, 0, 0);
+        }
+        setTimeSlot(minSlotTime);
+      });
+
+      /* On submit the form */
+      $("form").submit(function (event) {
+
+        var selectedDate = $("#selectedDate").val();
+        var selectedFormattedDate = selectedDate ? formatDate(new Date(selectedDate * 1000)) : null;
+        var data = {
+          parentName: $("#parentName").val(),
+          parentNumber: $("#parentNumber").val(),
+          parentEmail: $("#parentEmail").val(),
+          childName: $("#childName").val(),
+          childAge: $("#childAge").val(),
+          courseName: $("#courseName").val(),
+          courseDate: selectedFormattedDate,
+          timeSlot: $("#suitableSlots").val()
+        }
+        // headers: {  'Access-Control-Allow-Origin': '*' },
+        console.log(JSON.stringify(data));
+        $.ajax({
+          url: "http://localhost:3002/scheduleTrialClass",
+          type: "POST",
+          crossDomain: true,
+          data: data,
+          dataType: "json",
+          success: function (response) {
+            alert(response.info);
+            $("#courseForm").trigger('reset');
+          },
+          error: function (xhr, status) {
+            alert("Something went wrong, unable to schedule class.");
+            }
+        });
+
+        event.preventDefault();
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
